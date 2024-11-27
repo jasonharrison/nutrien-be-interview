@@ -13,8 +13,8 @@ Start with the included `Projection2021.csv` file. Ignore `FeedGrains.csv` for n
 
 Create an API service that provides a GET histogram route for each column in the table. For example, the following URLs should be successfully resolved by the service:
 
-* http://localhost/Commodity/histogram
-* http://localhost/CommodityType/histogram
+* http://localhost/Commodity/histogram?v=Rice
+* http://localhost/CommodityType/histogram?v=Crops
 * Etc.
 
 A GET request on any of these URLs should return HTML with the count of how many times each unique value appears in that column of the data. For example in the Commodity column, “Rice” appears 216 times, “Corn” 240, etc.
